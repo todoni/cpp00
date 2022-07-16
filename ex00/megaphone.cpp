@@ -10,12 +10,8 @@ int main(int argc, char **argv)
         std::string str("");
         for (int i = 1; i < argc; i++)
         {
-            int j = 0;
-            while (argv[i][j])
-            {
+			for (int j = 0; argv[i][j]; j++)
                 argv[i][j] = toupper(argv[i][j]);
-                ++j;
-            }
             str += argv[i];
         }
         std::cout << str << std::endl;
