@@ -3,6 +3,7 @@
 
 # include <string.h>
 # include <iostream>
+# include <iomanip>
 # include "Contact.hpp"
 
 class	PhoneBook
@@ -12,10 +13,10 @@ class	PhoneBook
 		int		index;
 	
 	public:
+		PhoneBook(void);
 		void	Add(void);
 		void	Search(void);
-		void	Exit(void);
-		void	Print(void);
+		void	PrintDetail(int index);
 };
 
 #endif
