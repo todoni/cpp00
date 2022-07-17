@@ -2,16 +2,20 @@
 # define PHONEBOOK_HPP
 
 # include <string.h>
+# include <iostream>
 # include "Contact.hpp"
 
 class	PhoneBook
 {
-	private :
+	private:
 		Contact contacts[8];
+		int		index;
+	
 	public:
-		void	Search();
-		void	Add();
-
+		void	Add(void);
+		void	Search(void);
+		void	Exit(void);
+		void	Print(void);
 };
 
 #endif

@@ -1,7 +1,12 @@
 #include <iostream>
+#include "PhoneBook.hpp"
+#include "Contact.hpp"
 
 int	main()
 {
-	std::cout << "Hello, ex01!" << std::endl;
+	PhoneBook	phoneBook;
+
+	phoneBook.Add();
+	phoneBook.Print();
 	return (0);
 }

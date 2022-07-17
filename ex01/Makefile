@@ -1,6 +1,6 @@
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = phonebook
-OBJECT = main.o
+OBJECT = main.o PhoneBook.o Contact.o
 
 %.o : %.cc
 	$(CXX) $(CXXFLAGS) -c $<
